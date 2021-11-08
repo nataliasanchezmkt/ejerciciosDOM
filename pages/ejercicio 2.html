@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Natalia Sanchez" />
+    <meta name="description" content="pratica de DOM" />
+    <meta
+      name="key words"
+      content="practica, dom, javaScrip, html, css, bootstrap"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 class="bg-dark text-center text-light py-4">
+          Complete el siguiente formulario
+        </h1>
+        <article class="container">
+          <p class="lead text-center my-4">
+            Complete sus datos, luego presione el boton "Cargar", para
+            guardarlos. A continuacion presione: "Mostar datos" para verificar
+            que su informacion se guardo correctamente. "Mostar generacion",
+            para saber a que generacion pertenece y su rasgo caracteristico. "Es
+            mayor de edad?" para saber si el sistema lo reconoce como menor o
+            mayor de edad.
+          </p>
+          <hr />
+        </article>
+        <article class="row mx-5">
+          <div class="col-sm-12 col-md-6">
+            <form class="my-5">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" id="nombre" value="" />
+              </div>
+              <div class="mb-3">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="text" class="form-control" id="age" value="" />
+              </div>
+              <div class="mb-3">
+                <label for="dni" class="form-label">Dni</label>
+                <input type="text" class="form-control" id="dni" value="" />
+              </div>
+              <div class="mb-3">
+                <label for="genero" class="form-label">Genero</label>
+                <input type="text" class="form-control" id="genero" value="" />
+              </div>
+              <div class="mb-3">
+                <label for="h" class="form-label">Altura</label>
+                <input type="text" class="form-control" id="h" value="" />
+              </div>
+              <div class="mb-3">
+                <label for="w" class="form-label">Peso</label>
+                <input type="text" class="form-control" id="w" value="" />
+              </div>
+              <div class="mb-3">
+                <label for="date" class="form-label">Fecha de nacimiento</label>
+                <input type="text" class="form-control" id="fecha" value="" />
+              </div>
+
+              <div class="text-end">
+                <button class="btn btn-dark" id="datos" onclick="creador()">
+                  Cargar datos
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-6 d-flex justify-content-center align-center flex-column"
+          >
+            <button
+              class="btn btn-danger mb-5 mx-5"
+              
+              onclick="mostrarGeneracion()"
+            >
+              Mostrar generacion
+            </button>
+
+            <button
+              class="btn btn-warning mx-5"
+              onclick=" esMayordeEdad()"
+           
+            >
+              Es mayor de edad?
+            </button>
+            <button
+              class="btn btn-primary mx-5 my-5"
+             
+              onclick="mostrarDatos()"
+            >
+              Mostrar datos
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ej2.js"></script>
+  </body>
+</html>

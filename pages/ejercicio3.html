@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Natalia Sanchez" />
+    <meta name="description" content="pratica de DOM" />
+    <meta name="key words"  content="practica, dom, javaScrip, html, css, bootstrap"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+          <article>
+          <h1 class="display-3 text-center bg-dark text-light py-3">Lista de tareas</h1>
+        </article>
+        <article class="container d-flex flex-column my-5">
+            <label for="tareas" class="my-5"> <h3>Ingrese la tarea a realizar:</h3></label>
+            <input type="text" class="my-3 p-5" id="tareas">
+
+            <div ><button class="btn btn-primary" type="submit" id="add" onclick="addTask()">Agregar tarea</button></div>
+        </article>
+        <article class="container d-flex justify-content-between">
+            <h3>Lista de tareas agregardas:</h3>
+            <button class="btn btn-danger" onclick="remove()" >Eliminar</button>
+          </article>
+            <article class="container">
+            <div id="lista" >
+
+            </div>
+
+        </article>
+
+          
+
+      </section>
+    </main>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ej3.js"></script>
+  </body>
+</html>
